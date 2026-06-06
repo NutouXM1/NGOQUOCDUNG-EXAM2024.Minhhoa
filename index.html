@@ -5,33 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo List</title>
-
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
   <div class="container-lg py-4">
 
-    <!-- Header -->
     <div class="row align-items-center mb-4">
       <div class="col-12 col-md-6">
         <h1 class="fw-bold">Task List</h1>
       </div>
       <div class="col-12 col-md-6 text-md-end">
-        <!-- Trigger modal -->
         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addTaskModal">
           <i class="bi bi-plus-lg"></i> Add Task
         </button>
       </div>
     </div>
 
-    <!-- Task list container -->
     <div id="taskContainer"></div>
 
-    <!-- Add Task Modal -->
     <div class="modal fade" id="addTaskModal" tabindex="-1" aria-labelledby="addTaskModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -42,14 +35,11 @@
           </div>
 
           <div class="modal-body">
-            <!-- Task Name -->
             <div class="mb-3">
               <label class="form-label">Task</label>
               <input id="taskName" type="text" class="form-control" placeholder="Type your task here...">
               <div id="taskError" class="text-danger mt-2"></div>
             </div>
-
-            <!-- Priority -->
             <div class="mb-3">
               <label class="form-label d-block">Priority</label>
               <div class="d-flex flex-wrap gap-2">
@@ -78,4 +68,5 @@
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
